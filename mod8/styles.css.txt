@@ -1,0 +1,7 @@
+body {
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-weight: 700;
+}
