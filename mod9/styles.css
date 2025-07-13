@@ -1,0 +1,22 @@
+
+body {
+  background: linear-gradient(to bottom right, #f1f4f9, #dfe9f3);
+  color: #333;
+}
+header {
+  background-color: #343a40;
+  color: white;
+}
+nav.navbar {
+  background-color: #f8f9fa;
+}
+nav.navbar .nav-link {
+  color: #333;
+}
+nav.navbar .nav-link:hover {
+  color: #007bff;
+}
+footer {
+  background-color: #343a40;
+  color: white;
+}
