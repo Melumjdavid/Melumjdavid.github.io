@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Canvas Example - Module 10</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background-color: #f9f9f9;
+    }
+    canvas {
+      border: 1px solid #444;
+      display: block;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Canvas Element Example</h1>
+  <p>
+    The HTML5 <code>&lt;canvas&gt;</code> element is used to draw graphics using JavaScript.
+    It provides a space in the browser where you can dynamically create shapes, images,
+    animations, and more using a set of drawing functions provided by the Canvas API.
+    Below is a simple example that draws a blue rectangle and a text label on a canvas.
+  </p>
+
+  <canvas id="myCanvas" width="400" height="200"></canvas>
+
+  <script>
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // Draw blue rectangle
+    ctx.fillStyle = '#007BFF';
+    ctx.fillRect(50, 50, 300, 100);
+
+    // Draw text
+    ctx.fillStyle = '#fff';
+    ctx.font = '20px Arial';
+    ctx.fillText('Canvas Drawing Example', 85, 115);
+  </script>
+
+  <h2>Additional Content</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt turpis non neque ultrices, nec pulvinar felis suscipit.</p>
+  <ul>
+    <li>Canvas is resolution dependent.</li>
+    <li>You can use canvas for games, charts, and data visualizations.</li>
+    <li>Unlike SVG, canvas does not retain object information once drawn.</li>
+  </ul>
+</body>
+</html>
